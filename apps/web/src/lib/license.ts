@@ -80,7 +80,7 @@ const STORAGE_KEY = `mdpe.pro.license`
  * Pro purchase page URL (Afdian item). Empty until the product page is live;
  * the buy button in LicenseDialog is hidden while this is empty.
  */
-export const PRO_PURCHASE_URL = ``
+export const PRO_PURCHASE_URL = `https://afdian.com/item/53f63166bdb311f1aa515254001e7c00`
 
 interface ExtensionStorageArea {
   get: (key: string) => Promise<Record<string, unknown>>
