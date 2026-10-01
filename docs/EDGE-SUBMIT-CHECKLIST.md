@@ -49,7 +49,9 @@
 ```bash
 cd apps/web
 NODE_OPTIONS=--max-old-space-size=4096 ./node_modules/.bin/wxt zip
-# 产物：.output/md-publisher-extension-<version>-chrome.zip
+# 产物：.output/mdweb-undefined-chrome.zip（WXT 默认命名）
+# 提交前重命名为规范名：
+cp .output/mdweb-undefined-chrome.zip .output/md-publisher-extension-<version>-chrome.zip
 ```
 
 构建产物同时发布到 GitHub Release，供离线包分发下载。
