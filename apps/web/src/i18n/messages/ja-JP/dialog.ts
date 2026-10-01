@@ -117,9 +117,9 @@ export default {
   },
   fund: {
     title: `サポート`,
-    description: `このプロジェクトが気に入ったら、以下の方法でサポートできます。`,
-    qrAlt1: `サポート QR コード 1`,
-    qrAlt2: `サポート QR コード 2`,
+    description: `このツールが役に立ったら、Pro の購入で開発を支援できます。`,
+    proHint: `このツールが役に立ったら、Pro の購入で開発を支援できます。`,
+    goPro: `Pro を購入して支援する`,
   },
   markdownHelp: {
     title: `Markdown 構文ヘルプ`,

@@ -76,6 +76,12 @@ export function formatLicenseKey(input: string): string {
 
 const STORAGE_KEY = `mdpe.pro.license`
 
+/**
+ * Pro purchase page URL (Afdian item). Empty until the product page is live;
+ * the buy button in LicenseDialog is hidden while this is empty.
+ */
+export const PRO_PURCHASE_URL = ``
+
 interface ExtensionStorageArea {
   get: (key: string) => Promise<Record<string, unknown>>
   set: (items: Record<string, unknown>) => Promise<void>

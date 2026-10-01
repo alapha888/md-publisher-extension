@@ -8,6 +8,7 @@ export default {
     activated: `Pro が有効です`,
     deactivate: `無効化`,
     howToGet: `Afdian で Pro を購入すると、ライセンスキーがメールで届きます。`,
+    buyPro: `Afdian で Pro を購入`,
   },
   pro: {
     exportAll: `一括エクスポート`,

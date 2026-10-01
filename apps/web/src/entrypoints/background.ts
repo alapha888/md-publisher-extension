@@ -25,7 +25,7 @@ export default defineBackground({
         return
       }
       if (detail.reason === `install`) {
-        browser.tabs.create({ url: `https://md-pages.doocs.org/welcome` })
+        browser.tabs.create({ url: `https://alapha888.github.io/md-publisher-extension/` })
       }
       else if (detail.reason === `update`) {
         browser.runtime.openOptionsPage()

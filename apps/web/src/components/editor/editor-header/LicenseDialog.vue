@@ -3,7 +3,7 @@ import { Check, KeyRound, Lock } from '@lucide/vue'
 import { computed, ref, watch } from 'vue'
 import PanelDialog from '@/components/shared/panel-dialog/PanelDialog.vue'
 import { Button } from '@/components/ui/button'
-import { useLicense } from '@/lib/license'
+import { PRO_PURCHASE_URL, useLicense } from '@/lib/license'
 import { PRO_FEATURES } from '@/lib/pro'
 
 const props = defineProps<{
@@ -58,6 +58,11 @@ function maskedKey(): string {
   const k = licenseKey.value ?? ``
   return k.length > 8 ? `${k.slice(0, 9)}…${k.slice(-6)}` : k
 }
+
+function openPurchasePage() {
+  if (PRO_PURCHASE_URL)
+    window.open(PRO_PURCHASE_URL, `_blank`, `noopener,noreferrer`)
+}
 </script>
 
 <template>
@@ -94,6 +99,14 @@ function maskedKey(): string {
         <p class="text-left text-xs text-muted-foreground">
           {{ t('license.howToGet') }}
         </p>
+        <Button
+          v-if="PRO_PURCHASE_URL"
+          variant="outline"
+          class="w-full"
+          @click="openPurchasePage"
+        >
+          {{ t('license.buyPro') }}
+        </Button>
         <div class="flex gap-2">
           <input
             v-model="keyInput"

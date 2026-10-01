@@ -8,6 +8,7 @@ export default {
     activated: `Pro 已啟用`,
     deactivate: `停用`,
     howToGet: `在愛發電購買 Pro 後，啟用碼會發送到你的郵箱。`,
+    buyPro: `前往愛發電購買 Pro`,
   },
   pro: {
     exportAll: `一鍵導出`,

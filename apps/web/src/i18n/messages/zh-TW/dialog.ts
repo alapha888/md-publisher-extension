@@ -117,9 +117,9 @@ export default {
   },
   fund: {
     title: `讚賞`,
-    description: `若覺得專案不錯，可以通過以下方式支援我們～`,
-    qrAlt1: `讚賞二維碼 1`,
-    qrAlt2: `讚賞二維碼 2`,
+    description: `如果這個工具對你有幫助，歡迎購買 Pro 支援持續開發～`,
+    proHint: `如果這個工具對你有幫助，歡迎購買 Pro 支援持續開發～`,
+    goPro: `購買 Pro 支援開發`,
   },
   markdownHelp: {
     title: `Markdown 語法幫助`,

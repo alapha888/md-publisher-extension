@@ -117,9 +117,9 @@ export default {
   },
   fund: {
     title: `赞赏`,
-    description: `若觉得项目不错，可以通过以下方式支持我们～`,
-    qrAlt1: `赞赏二维码 1`,
-    qrAlt2: `赞赏二维码 2`,
+    description: `如果这个工具对你有帮助，欢迎购买 Pro 支持持续开发～`,
+    proHint: `如果这个工具对你有帮助，欢迎购买 Pro 支持持续开发～`,
+    goPro: `购买 Pro 支持开发`,
   },
   markdownHelp: {
     title: `Markdown 语法帮助`,

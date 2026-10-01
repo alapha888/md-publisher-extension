@@ -46,6 +46,8 @@ export default defineConfig({
     version,
     icons: {
       256: mode === `development` ? `/mpmd/icon-256-gray.png` : `/mpmd/icon-256.png`,
+      128: `/mpmd/icon-128.png`,
+      48: `/mpmd/icon-48.png`,
     },
     permissions: [`storage`, `activeTab`, `sidePanel`, `contextMenus`, `identity`],
     host_permissions: [

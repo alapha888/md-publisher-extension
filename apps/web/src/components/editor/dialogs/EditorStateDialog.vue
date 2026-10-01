@@ -152,7 +152,7 @@ function exportSelectedConfig() {
 
   const now = new Date()
   const pad = (n: number) => String(n).padStart(2, `0`)
-  const filename = `doocs-md-config-${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}_${pad(now.getHours())}-${pad(now.getMinutes())}-${pad(now.getSeconds())}.json`
+  const filename = `mdpe-config-${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}_${pad(now.getHours())}-${pad(now.getMinutes())}-${pad(now.getSeconds())}.json`
   downloadFile(JSON.stringify(selectedConfig, null, 2), filename, `application/json`)
   toast.success(t('editorState.exportSuccess'))
   dialogOpen.value = false

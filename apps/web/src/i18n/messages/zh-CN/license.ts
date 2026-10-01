@@ -8,6 +8,7 @@ export default {
     activated: `Pro 已激活`,
     deactivate: `停用`,
     howToGet: `在爱发电购买 Pro 后，激活码会发送到你的邮箱。`,
+    buyPro: `前往爱发电购买 Pro`,
   },
   pro: {
     exportAll: `一键导出`,

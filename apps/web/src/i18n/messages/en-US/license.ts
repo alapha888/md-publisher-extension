@@ -8,6 +8,7 @@ export default {
     activated: `Pro activated`,
     deactivate: `Deactivate`,
     howToGet: `After purchasing Pro on Afdian, the license key will be sent to your email.`,
+    buyPro: `Buy Pro on Afdian`,
   },
   pro: {
     exportAll: `Export all`,

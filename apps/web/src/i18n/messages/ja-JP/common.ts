@@ -7,7 +7,7 @@ export default {
     jaJP: `日本語`,
   },
   meta: {
-    title: `微信 Markdown エディター | Doocs`,
+    title: `MD 組版アシスタント`,
     description: `Wechat Markdown Editor | 微信公式アカウント向けのシンプルな Markdown エディター`,
   },
   loader: {
