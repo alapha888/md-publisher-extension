@@ -110,7 +110,8 @@ export default {
   },
   about: {
     title: `关于`,
-    description: `一款高度简洁的微信 Markdown 编辑器`,
+    description: `Markdown 多平台排版助手`,
+    basedOn: `基于 doocs/md 构建（WTFPL 开源协议）`,
     followHint: `扫码关注公众号 Doocs，原创技术内容第一时间推送！`,
     imageAlt: `Doocs Markdown 编辑器`,
   },

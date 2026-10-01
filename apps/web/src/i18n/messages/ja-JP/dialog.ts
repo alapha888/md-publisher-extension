@@ -110,7 +110,8 @@ export default {
   },
   about: {
     title: `このアプリについて`,
-    description: `微信公式アカウント向けのシンプルな Markdown エディター`,
+    description: `Markdown マルチプラットフォーム排版アシスタント`,
+    basedOn: `doocs/md (WTFPL) をベースに構築`,
     followHint: `QR コードをスキャンして Doocs の微信公式アカウントをフォローし、オリジナルの技術コンテンツを受け取りましょう。`,
     imageAlt: `Doocs Markdown エディター`,
   },

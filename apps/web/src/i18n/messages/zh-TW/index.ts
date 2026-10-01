@@ -3,6 +3,7 @@ import chrome from './chrome'
 import common from './common'
 import dialog from './dialog'
 import editor from './editor'
+import license from './license'
 import marketplace from './marketplace'
 import notifications from './notifications'
 import store from './store'
@@ -17,5 +18,6 @@ export default {
   ...notifications,
   ...ai,
   ...upload,
+  ...license,
   ...store,
 }

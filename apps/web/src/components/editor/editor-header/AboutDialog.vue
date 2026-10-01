@@ -20,9 +20,8 @@ const dialogOpen = computed({
 })
 
 const links = [
-  { label: `GitHub`, url: `https://github.com/doocs/md` },
-  { label: `Gitee`, url: `https://gitee.com/doocs/md` },
-  { label: `GitCode`, url: `https://gitcode.com/doocs/md` },
+  { label: `GitHub`, url: `https://github.com/alapha888/md-publisher-extension` },
+  { label: `doocs/md`, url: `https://github.com/doocs/md` },
 ]
 
 function onRedirect(url: string) {
@@ -39,14 +38,9 @@ function onRedirect(url: string) {
   >
     <div class="space-y-4 px-4 py-4 text-center sm:px-6">
       <p class="text-sm text-muted-foreground">
-        {{ t('about.followHint') }}
+        {{ t('about.basedOn') }}
       </p>
-      <img
-        class="mx-auto max-w-[200px] rounded-xl ring-1 ring-border"
-        src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/gh/doocs/md/images/1648303220922-7e14aefa-816e-44c1-8604-ade709ca1c69.png"
-        :alt="t('about.imageAlt')"
-      >
-      <div class="grid grid-cols-3 gap-2">
+      <div class="grid grid-cols-2 gap-2">
         <Button
           v-for="link in links"
           :key="link.url"

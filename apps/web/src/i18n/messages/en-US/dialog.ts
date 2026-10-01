@@ -110,7 +110,8 @@ export default {
   },
   about: {
     title: `About`,
-    description: `A minimalist Markdown editor for WeChat Official Accounts`,
+    description: `Markdown multi-platform publishing assistant`,
+    basedOn: `Built on doocs/md (WTFPL)`,
     followHint: `Scan the QR code to follow Doocs on WeChat for original tech content.`,
     imageAlt: `Doocs Markdown Editor`,
   },

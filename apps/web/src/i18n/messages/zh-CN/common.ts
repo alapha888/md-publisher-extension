@@ -165,6 +165,7 @@ export default {
     feedback: `反馈`,
     releaseHistory: `版本历史`,
     about: `关于`,
+    pro: `Pro 激活`,
     fund: `赞赏`,
   },
   header: {

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { BookText, Command, Heart, HelpCircle, Keyboard, MessageSquare, Tag } from '@lucide/vue'
+import { BookText, Command, Heart, HelpCircle, Keyboard, KeyRound, MessageSquare, Tag } from '@lucide/vue'
 
 import { ctrlSign, shiftSign } from '@md/shared/configs'
 
@@ -19,6 +19,7 @@ const uiStore = useUIStore()
 
 const {
   toggleShowAboutDialog,
+  toggleShowLicenseDialog,
   toggleShowFundDialog,
   toggleShowMarkdownHelpDialog,
   toggleShowKeyboardShortcutsDialog,
@@ -27,6 +28,10 @@ const {
 
 function openAboutDialog() {
   toggleShowAboutDialog(true)
+}
+
+function openLicenseDialog() {
+  toggleShowLicenseDialog(true)
 }
 
 function openFundDialog() {
@@ -92,6 +97,10 @@ function openReleases() {
         <HelpCircle class="mr-2 h-4 w-4" />
         {{ t('menu.about') }}
       </MenubarItem>
+      <MenubarItem @click="openLicenseDialog()">
+        <KeyRound class="mr-2 h-4 w-4" />
+        {{ t('menu.pro') }}
+      </MenubarItem>
       <MenubarItem @click="openFundDialog()">
         <Heart class="mr-2 h-4 w-4" />
         {{ t('menu.fund') }}
@@ -133,6 +142,10 @@ function openReleases() {
       <MenubarItem @click="openAboutDialog()">
         <HelpCircle class="mr-2 h-4 w-4" />
         {{ t('menu.about') }}
+      </MenubarItem>
+      <MenubarItem @click="openLicenseDialog()">
+        <KeyRound class="mr-2 h-4 w-4" />
+        {{ t('menu.pro') }}
       </MenubarItem>
       <MenubarItem @click="openFundDialog()">
         <Heart class="mr-2 h-4 w-4" />

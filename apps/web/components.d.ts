@@ -110,6 +110,7 @@ declare module 'vue' {
     InsertDropdown: typeof import('./src/components/editor/editor-header/InsertDropdown.vue')['default']
     KeyboardShortcutsDialog: typeof import('./src/components/editor/editor-header/KeyboardShortcutsDialog.vue')['default']
     Label: typeof import('./src/components/ui/label/Label.vue')['default']
+    LicenseDialog: typeof import('./src/components/editor/editor-header/LicenseDialog.vue')['default']
     LocalImageUploadDialog: typeof import('./src/components/editor/dialogs/LocalImageUploadDialog.vue')['default']
     MarkdownHelpDialog: typeof import('./src/components/editor/editor-header/MarkdownHelpDialog.vue')['default']
     MarketplaceDialog: typeof import('./src/components/editor/dialogs/MarketplaceDialog.vue')['default']

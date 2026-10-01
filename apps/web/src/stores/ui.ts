@@ -157,6 +157,9 @@ export const useUIStore = defineStore(`ui`, () => {
   const isShowAboutDialog = ref(false)
   const toggleShowAboutDialog = useToggle(isShowAboutDialog)
 
+  const isShowLicenseDialog = ref(false)
+  const toggleShowLicenseDialog = useToggle(isShowLicenseDialog)
+
   const isShowFundDialog = ref(false)
   const toggleShowFundDialog = useToggle(isShowFundDialog)
 
@@ -292,6 +295,8 @@ export const useUIStore = defineStore(`ui`, () => {
     pdfExportOptions,
     isShowAboutDialog,
     toggleShowAboutDialog,
+    isShowLicenseDialog,
+    toggleShowLicenseDialog,
     isShowFundDialog,
     toggleShowFundDialog,
     isShowMarkdownHelpDialog,

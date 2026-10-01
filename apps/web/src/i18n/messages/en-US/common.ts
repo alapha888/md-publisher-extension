@@ -165,6 +165,7 @@ export default {
     feedback: `Feedback`,
     releaseHistory: `Releases`,
     about: `About`,
+    pro: `Pro`,
     fund: `Support Us`,
   },
   header: {

@@ -41,7 +41,8 @@ export default defineConfig({
   srcDir: `src`,
   modulesDir: `src/modules`,
   manifest: ({ mode, browser }) => ({
-    name: `公众号内容编辑器`,
+    name: `MD 排版助手`,
+    description: `Markdown 多平台排版助手：微信公众号样式渲染，知乎、掘金干净 Markdown 一键复制。`,
     version,
     icons: {
       256: mode === `development` ? `/mpmd/icon-256-gray.png` : `/mpmd/icon-256.png`,

@@ -19,6 +19,7 @@ import StyleDropdown from './StyleDropdown.vue'
 const emit = defineEmits([`startCopy`, `endCopy`])
 const { t } = useI18n()
 const AboutDialog = defineAsyncComponent(() => import('./AboutDialog.vue'))
+const LicenseDialog = defineAsyncComponent(() => import('./LicenseDialog.vue'))
 const FundDialog = defineAsyncComponent(() => import('./FundDialog.vue'))
 const EditorStateDialog = defineAsyncComponent(() => import('@/components/editor/dialogs/EditorStateDialog.vue'))
 const PreferencesDialog = defineAsyncComponent(() => import('@/components/editor/dialogs/PreferencesDialog.vue'))
@@ -39,7 +40,7 @@ const { editorRefresh } = useEditorRefresh()
 const { editor } = storeToRefs(editorStore)
 const { output } = storeToRefs(renderStore)
 const { primaryColor } = storeToRefs(themeStore)
-const { isOpenRightSlider, isShowSyncDialog, isShowAccountDialog, isShowShareDialog, isShowPdfExportDialog, isShowAboutDialog, isShowFundDialog, isShowEditorStateDialog, isShowPreferencesDialog, isShowMarkdownHelpDialog, isShowKeyboardShortcutsDialog, copyMode } = storeToRefs(uiStore)
+const { isOpenRightSlider, isShowSyncDialog, isShowAccountDialog, isShowShareDialog, isShowPdfExportDialog, isShowAboutDialog, isShowLicenseDialog, isShowFundDialog, isShowEditorStateDialog, isShowPreferencesDialog, isShowMarkdownHelpDialog, isShowKeyboardShortcutsDialog, copyMode } = storeToRefs(uiStore)
 
 const isCopying = ref(false)
 
@@ -288,6 +289,7 @@ function copyToWeChat() {
   </header>
 
   <AboutDialog v-if="isShowAboutDialog" v-model:open="isShowAboutDialog" />
+  <LicenseDialog v-if="isShowLicenseDialog" v-model:open="isShowLicenseDialog" />
   <FundDialog v-if="isShowFundDialog" v-model:open="isShowFundDialog" />
   <EditorStateDialog v-if="isShowEditorStateDialog" v-model:open="isShowEditorStateDialog" />
   <PreferencesDialog v-model:open="isShowPreferencesDialog" />

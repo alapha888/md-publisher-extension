@@ -165,6 +165,7 @@ export default {
     feedback: `フィードバック`,
     releaseHistory: `リリース`,
     about: `このアプリについて`,
+    pro: `Pro`,
     fund: `サポート`,
   },
   header: {
