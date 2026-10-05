@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MD 排版助手 · Markdown 多平台排版浏览器插件</title>
+    <meta
+      name="description"
+      content="Markdown 多平台排版助手：微信公众号样式渲染，知乎、掘金干净 Markdown 一键复制。免费使用。"
+    />
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+        line-height: 1.7;
+        color: #1a1a1a;
+        background: #fff;
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          color: #e5e5e5;
+          background: #111;
+        }
+      }
+      .wrap {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 48px 20px 64px;
+      }
+      h1 {
+        font-size: 28px;
+        margin: 0 0 8px;
+      }
+      .sub {
+        color: #666;
+        margin: 0 0 32px;
+      }
+      @media (prefers-color-scheme: dark) {
+        .sub {
+          color: #999;
+        }
+      }
+      h2 {
+        font-size: 20px;
+        margin: 40px 0 12px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 8px;
+      }
+      @media (prefers-color-scheme: dark) {
+        h2 {
+          border-color: #333;
+        }
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+      }
+      th,
+      td {
+        border: 1px solid #e5e5e5;
+        padding: 10px 12px;
+        text-align: left;
+      }
+      @media (prefers-color-scheme: dark) {
+        th,
+        td {
+          border-color: #333;
+        }
+      }
+      th {
+        background: #f7f7f7;
+      }
+      @media (prefers-color-scheme: dark) {
+        th {
+          background: #1c1c1c;
+        }
+      }
+      .btn {
+        display: inline-block;
+        padding: 10px 22px;
+        border-radius: 8px;
+        background: #1a73e8;
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+        margin: 6px 8px 6px 0;
+      }
+      .btn.ghost {
+        background: transparent;
+        color: #1a73e8;
+        border: 1px solid #1a73e8;
+      }
+      @media (prefers-color-scheme: dark) {
+        .btn.ghost {
+          color: #8ab4f8;
+          border-color: #8ab4f8;
+        }
+      }
+      .note {
+        font-size: 13px;
+        color: #888;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      li {
+        margin: 6px 0;
+      }
+      footer {
+        margin-top: 56px;
+        font-size: 13px;
+        color: #888;
+        border-top: 1px solid #eee;
+        padding-top: 16px;
+      }
+      @media (prefers-color-scheme: dark) {
+        footer {
+          border-color: #333;
+        }
+      }
+      footer a {
+        color: #888;
+      }
+      .badge {
+        display: inline-block;
+        font-size: 12px;
+        background: #fef3c7;
+        color: #92400e;
+        border-radius: 4px;
+        padding: 2px 8px;
+        margin-left: 8px;
+        vertical-align: middle;
+      }
+      @media (prefers-color-scheme: dark) {
+        .badge {
+          background: #45300a;
+          color: #fcd34d;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1><img src="icon.png" alt="MD 排版助手图标" width="44" height="44" style="vertical-align: -10px; margin-right: 10px; border-radius: 10px;" />MD 排版助手</h1>
+      <p class="sub">
+        Markdown 多平台排版浏览器插件（Manifest V3，支持 Edge / Chrome）。<br />
+        写一次 Markdown，分别排成微信公众号、知乎、掘金可直接发布的格式。
+      </p>
+
+      <div>
+        <a class="btn" href="https://github.com/alapha888/md-publisher-extension/releases">下载离线安装包</a>
+        <a class="btn ghost" href="https://alapha888.github.io/md-publisher/">先试用网页版</a>
+      </div>
+      <p class="note">Edge 商店版正在提交审核；离线包解压后可在 edge://extensions/ 开启开发者模式加载。</p>
+
+      <h2>免费版功能</h2>
+      <ul>
+        <li>
+          <strong>微信 Tab</strong>：Markdown
+          渲染为微信公众号图文样式，复制后粘贴到公众号后台即可发布；支持多套主题与自定义 CSS。
+        </li>
+        <li><strong>知乎 Tab</strong>：输出干净 Markdown（图片已转为图床链接），一键复制，直接粘贴到知乎编辑器。</li>
+        <li>
+          <strong>掘金 Tab</strong>：输出干净 Markdown（代码块语言标注已规范化），一键复制，直接粘贴到掘金编辑器。
+        </li>
+      </ul>
+      <p class="note">免费版功能完整，不阉割、不加水印。文章内容保存在浏览器本地，不上传。</p>
+
+      <h2>免费版 vs Pro</h2>
+      <table>
+        <tr>
+          <th>功能</th>
+          <th>免费版</th>
+          <th>Pro（¥19.9 一次买断）</th>
+        </tr>
+        <tr>
+          <td>微信 / 知乎 / 掘金三 Tab 排版与复制</td>
+          <td>✓</td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>多平台一键导出（微信 HTML + 知乎/掘金 Markdown 打包下载）</td>
+          <td>—</td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>样式方案（多套自定义样式保存切换）</td>
+          <td>—</td>
+          <td>即将推出</td>
+        </tr>
+        <tr>
+          <td>去品牌（界面简洁模式）</td>
+          <td>—</td>
+          <td>即将推出</td>
+        </tr>
+      </table>
+
+      <h2>Pro 购买 <span class="badge">即将上架</span></h2>
+      <p>
+        Pro 通过爱发电购买，付款后激活码发送到邮箱，在插件内「帮助 → Pro 激活」输入即可解锁。<br />
+        商品页正在准备中，上架后此处更新购买入口。
+      </p>
+
+      <h2>隐私</h2>
+      <p>本插件不收集、不上传任何个人数据。详见<a href="privacy.html">隐私政策</a>。</p>
+
+      <footer>
+        基于开源项目 <a href="https://github.com/doocs/md">doocs/md</a>（WTFPL）构建。 ·
+        <a href="https://github.com/alapha888/md-publisher-extension">GitHub 仓库</a> ·
+        <a href="privacy.html">隐私政策</a>
+      </footer>
+    </div>
+  </body>
+</html>
